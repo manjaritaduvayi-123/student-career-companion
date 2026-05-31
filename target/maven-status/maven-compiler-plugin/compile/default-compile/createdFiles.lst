@@ -1,0 +1,4 @@
+com\manjari\careercompanion\model\Student.class
+com\manjari\careercompanion\service\CareerService.class
+com\manjari\careercompanion\controller\CareerController.class
+com\manjari\careercompanion\CareercompanionApplication.class
