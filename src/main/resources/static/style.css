@@ -1,40 +1,111 @@
 body{
-    background:#f4f6f9;
-    font-family: 'Segoe UI', sans-serif;
+    font-family:'Segoe UI',sans-serif;
+    background:linear-gradient(
+        135deg,
+        #667eea,
+        #764ba2
+    );
+    min-height:100vh;
 }
 
-.hero-section{
-    margin-bottom:30px;
+/* HERO */
+
+.hero{
+    text-align:center;
+    color:white;
 }
 
-.main-card{
-    border:none;
-    border-radius:20px;
+.hero h1{
+    font-size:3rem;
+    font-weight:700;
 }
 
-.card{
-    border:none;
-    border-radius:20px;
+.hero p{
+    font-size:1.2rem;
+    opacity:0.9;
 }
+
+/* GLASS CARD */
+
+.glass-card{
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,0.2);
+
+    border-radius:25px;
+
+    box-shadow:
+    0 8px 32px rgba(0,0,0,0.2);
+
+    color:white;
+}
+
+/* INPUTS */
 
 .form-control{
-    border-radius:10px;
-    padding:12px;
+    height:50px;
+    border-radius:12px;
+    border:none;
 }
 
-.btn{
-    border-radius:10px;
+.form-control:focus{
+    box-shadow:0 0 10px #fff;
+}
+
+/* BUTTON */
+
+.btn-custom{
+
+    background:#00c896;
+    color:white;
+
+    border:none;
+
+    padding:14px;
+
+    font-size:18px;
+    font-weight:600;
+
+    border-radius:12px;
+
+    transition:0.3s;
+}
+
+.btn-custom:hover{
+    transform:translateY(-3px);
+    background:#00a87f;
+}
+
+/* RESULT */
+
+.career-title{
+    font-weight:700;
+    margin-bottom:20px;
 }
 
 .result-box{
-    background:#f8f9fa;
+    background:white;
+    color:#333;
+
     padding:20px;
+
     border-radius:15px;
-    font-size:16px;
-    line-height:1.8;
+
+    min-height:120px;
+
     white-space:pre-wrap;
+
+    font-size:17px;
+
+    line-height:1.8;
 }
 
-.text-success{
-    font-weight:700;
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:2rem;
+}
+
 }
